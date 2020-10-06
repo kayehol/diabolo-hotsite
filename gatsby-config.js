@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Pré-Venda Diabolo`,
+    description: `Nove contos compõem este livro, em que sempre se manifesta alguma perda irremediável, principalmente a da inocência.`,
+    author: `Kayê Holanda`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,7 +27,19 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },
+    },/*
+    {
+      resolve: "@pasdo501/gatsby-source-woocommerce",
+      options: {
+        api: 'trajeseditora.com.br',
+        https: true,
+        api_keys: {
+          consumer_key: 'ck_d2285126cdef2b7bc9fe5cb6a6a1e57b891b14bb',
+          consumer_secret: 'cs_5759d2636aac0db5a153fdf0c59496c6cafd9381',
+        },
+        fields: [`products`, `products/categories`, `products/attributes`, `payment_gateways`],
+      }
+    }*/
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
